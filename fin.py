@@ -3,8 +3,12 @@ import pandas as pd
 import pickle
 
 # Load model
-with open('financial_inclusion_model.pkl', 'rb') as f:
-    model = pickle.load(f)
+def new_func():
+    with open('financial_inclusion_model.pkl', 'rb') as f:
+        model = pickle.load(f)
+    return model
+
+model = new_func()
 
 # Define label encoders (these should match what you used during training)
 label_encoders = {

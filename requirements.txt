@@ -1,7 +1,4 @@
 scikit-learn
-xgboost
-lightgbm
 pandas
 numpy
 streamlit
-pickle
